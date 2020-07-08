@@ -23,7 +23,7 @@ export default function reducer(state = initialState, action) {
             return {...state, loading: true};
         case REQUEST_ARTICLES +'_FULFILLED':
             return {articles: payload, loading:false };
-        case REQUEST_ARTICLES, + '_REJECTED':
+        case REQUEST_ARTICLES + '_REJECTED':
             return {...state, loading:false};
         default:
             return state;
